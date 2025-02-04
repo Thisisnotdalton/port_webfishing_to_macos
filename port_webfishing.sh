@@ -80,9 +80,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 else
   PLATFORM="macos"
 fi
-
-GODOT_3_STEAM_ARCHIVE="${PLATFORM}-g36-s161-gs328.zip"
-GODOT_3_STEAM_URL="https://github.com/GodotSteam/GodotSteam/releases/download/v3.28/${GODOT_3_STEAM_ARCHIVE}"
+GODOT_3_STEAM_ARCHIVE="${PLATFORM}-g352-s158-gs321.zip"
+GODOT_3_STEAM_URL="https://github.com/GodotSteam/GodotSteam/releases/download/v3.21/${GODOT_3_STEAM_ARCHIVE}"
 GODOT_4_STEAM_ARCHIVE="${PLATFORM}-g43-s161-gs412.zip"
 GODOT_4_STEAM_URL="https://github.com/GodotSteam/GodotSteam/releases/download/v4.12/${GODOT_4_STEAM_ARCHIVE}"
 
@@ -104,7 +103,7 @@ ARCHIVE_PATH="${INSTALL_DIR}${GODOT_STEAM_ARCHIVE}"
 if [[ -f $ARCHIVE_PATH ]]; then
   echo "Godot steam archive ${GODOT_STEAM_ARCHIVE} already downloaded to ${ARCHIVE_PATH}."
 else
-  wget $GODOT_STEAM_URL -O $ARCHIVE_PATH
+  curl -L -o $ARCHIVE_PATH $GODOT_STEAM_URL
 fi
 
 
