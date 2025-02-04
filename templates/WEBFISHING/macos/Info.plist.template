@@ -5,15 +5,15 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>$GAME_NAME</string>
+	<string>WEBFISHING</string>
 	<key>CFBundleName</key>
-	<string>$GAME_NAME</string>
+	<string>WEBFISHING</string>
 	<key>CFBundleDisplayName</key>
-	<string>$GAME_NAME</string>
+	<string>WEBFISHING</string>
 	<key>CFBundleIconFile</key>
 	<string>icon.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>info.$GAME_NAME.$GAME_NAME</string>
+	<string>info.WEBFISHING.WEBFISHING</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>

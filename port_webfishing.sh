@@ -119,7 +119,7 @@ else
   unzip -o -d "$TEMPLATE_DIR" "${ARCHIVE_TEMP_PATH}/macos.zip"
   echo $GAME_ID > "${TEMPLATE_DIR}/osx_template.app/Contents/MacOS/steam_appid.txt"
   export GAME_NAME=$GAME_NAME
-  cat "templates/${GAME_NAME}/${PLATFORM}/Info.plist.template" | envsubst '$GAME_NAME' > "${TEMPLATE_DIR}/osx_template.app/Contents/Info.plist"
+  cp "templates/${GAME_NAME}/${PLATFORM}/Info.plist.template" "${TEMPLATE_DIR}/osx_template.app/Contents/Info.plist"
   CONTENTS_DIR="${TEMPLATE_DIR}/osx_template.app/Contents/"
   cp "${PACK_FILE_PATH}" "${CONTENTS_DIR}Resources/${GAME_NAME}.pck"
   EXECUTABLE_PREFIX="${CONTENTS_DIR}MacOS/"
